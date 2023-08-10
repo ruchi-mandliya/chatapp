@@ -1,16 +1,16 @@
 import React from "react";
+import pic from "../assets/img/postpic2.jpg";
 
 const Navbar = () => {
   return (
-    <div></div>
-    // <div className="navbar">
-    //   <span>Chatting App</span>
-    //   <div className="user">
-    //     <img src="" alt="" />
-    //     <span>Ruchi</span>
-    //     <button>logout</button>
-    //   </div>
-    // </div>
+    <div className="navbar">
+      {/* <span className="logo">Chatting App</span> */}
+      <div className="user">
+        <img src={pic} alt="" />
+        <span>Ruchi</span>
+        <button>logout</button>
+      </div>
+    </div>
   );
 };
 

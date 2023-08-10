@@ -122,14 +122,103 @@
             background-color:rgba(0, 115, 255, 0.103);
 
             .navbar{
+                // height: 50px;
+                padding: 20px;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
+               background-color: #ff00000d; 
+
+              
+               .user{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background-color: aliceblue;
+                    object-fit: cover;
+                }
+                button{
+                    margin-left: 160px;
+                    padding: 10px;
+                background-color: hwb(0 0% 0% / 0.512);
+                color: whitesmoke;
+                font-weight: bold;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                }
+               }
+               
+                
             }
+
+            .search{
+                border-bottom: 1px solid #80808064;
+                position: relative;
+
+                .searchForm{
+                    padding: 10px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+
+                   input{
+                    background-color: #d1c7f6;
+                    // background-color: transparent;
+                    border: none;
+                    padding: 5px;
+                    outline: none;
+                    width: 250px;
+                  
+
+                   }
+                   .searchIcon{
+                    position: absolute;
+                    right: 80px;
+                    font-size: 10px;
+                   }
+                }
+               }
+               .usersChat{
+                display: flex;
+                align-items: center;
+                gap:10px;
+                cursor: pointer;
+                &:hover{
+                    background-color: blueviolet;
+                }
+                img{
+                    padding: 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 14px;
+                        color:#4b4a4ae8;
+                    }
+                }
+               }
+
          }
          .chatbox{
             flex:2;
           
 
          }
+
      }
  }
