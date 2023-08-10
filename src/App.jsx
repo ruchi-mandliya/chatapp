@@ -1,20 +1,14 @@
-import { getDatabase, ref, set } from "firebase/database";
-import { app } from "./firebase";
+import React from "react";
 
-const db = getDatabase(app);
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import "./style.scss";
 
 const App = () => {
-  const putData = () => {
-    set(ref(db, "users/ruchi"), {
-      id: 1,
-      name: "ruchi",
-      age: 21,
-    });
-  };
   return (
-    <div className="app">
-      <h1>Firebase Chat App</h1>
-      <button onClick={putData}>Put Data</button>
+    <div>
+      <Register />
+      <Login />
     </div>
   );
 };
